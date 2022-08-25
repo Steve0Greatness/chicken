@@ -25,6 +25,17 @@ function convert(code) {
     .replaceAll("chicken bucket ", "[");
 }
 
+// function backwards_convert(code) {
+//   return code.replaceAll(",", "chicken chicken chicken chicken chicken chicken chicken chicken bucket ")
+//     .replaceAll(".", "chicken chicken chicken chicken chicken chicken chicken bucket ")
+//     .replaceAll("-", "chicken chicken chicken chicken chicken chicken bucket ")
+//     .replaceAll("+", "chicken chicken chicken chicken chicken bucket ")
+//     .replaceAll(">", "chicken chicken chicken chicken bucket ")
+//     .replaceAll("<", "chicken chicken chicken bucket")
+//     .replaceAll("]", "chicken chicken bucket ")
+//     .replaceAll("[", "chicken bucket ");
+// }
+
 function run(code) {
   output = "";
   bf.exec(code, (e, o) => {
