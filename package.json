@@ -12,6 +12,6 @@
   "bin": "./index.js",
   "dependencies": {
     "@types/node": "^18.0.6",
-    "brainfudge":"git+https://github.com/retronbv/brainfudge.git"
+    "brainfudge": "github:retronbv/brainfudge"
   }
 }

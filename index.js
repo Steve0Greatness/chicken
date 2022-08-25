@@ -6,19 +6,23 @@ const fs = require("fs");
 
 // Potato Script
 // Brainf*** but with potatoes
-// [  ]     <      >        +          -             .              ,
-// 🥔 🥔🥔 🥔🥔🥔 🥔🥔🥔🥔 🥔🥔🥔🥔🥔 🥔🥔🥔🥔🥔🥔 🥔🥔🥔🥔🥔🥔🥔 🥔🥔🥔🥔🥔🥔🥔🥔
+// [  ]           <                      >                              +                                                                                                 
+// chicken bucket chicken chicken bucket chicken chicken chicken bucket chicken chicken chicken chicken bucket chicken chicken chicken chicken chicken bucket
+// -                                                      .             
+// chicken chicken chicken chicken chicken chicken bucket chicken chicken chicken chicken chicken chicken chicken bucket
+// ,
+// chicken chicken chicken chicken chicken chicken chicken chicken bucket
 // confusing right?
 
 function convert(code) {
-  return code.replaceAll("🥔🥔🥔🥔🥔🥔🥔🥔", ",")
-    .replaceAll("🥔🥔🥔🥔🥔🥔🥔", ".")
-    .replaceAll("🥔🥔🥔🥔🥔🥔", "-")
-    .replaceAll("🥔🥔🥔🥔🥔", "+")
-    .replaceAll("🥔🥔🥔🥔", ">")
-    .replaceAll("🥔🥔🥔", "<")
-    .replaceAll("🥔🥔", "]")
-    .replaceAll("🥔", "[");
+  return code.replaceAll("chicken chicken chicken chicken chicken chicken chicken chicken bucket ", ",")
+    .replaceAll("chicken chicken chicken chicken chicken chicken chicken bucket ", ".")
+    .replaceAll("chicken chicken chicken chicken chicken chicken bucket ", "-")
+    .replaceAll("chicken chicken chicken chicken chicken bucket ", "+")
+    .replaceAll("chicken chicken chicken chicken bucket ", ">")
+    .replaceAll("chicken chicken chicken bucket", "<")
+    .replaceAll("chicken chicken bucket ", "]")
+    .replaceAll("chicken bucket ", "[");
 }
 
 function run(code) {
